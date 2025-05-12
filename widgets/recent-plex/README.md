@@ -18,8 +18,10 @@ show recent activities(TV or Movie) from Plex
       {{ if eq $librarySectionID 1 }}
         {{ $viewOffset := .JSON.Float "MediaContainer.Metadata.0.viewOffset" }}
         {{ $duration := .JSON.Float "MediaContainer.Metadata.0.duration" }}
+        {{ $thumbPath := .JSON.String "MediaContainer.Metadata.0.grandparentThumb"}}
+        {{ $thumbURL := concat "${PLEX_SERVER}" $thumbPath "?X-Plex-Token=${PLEX_TOKEN}" }}
         <li style="display: flex; align-items: center; gap: 6px;>">
-          <img loading="lazy" src="/assets/pic.jpg"  style="width: 64px; border-radius: var(--border-radius); margin-right: 10px;">
+          <img loading="lazy" src="{{ $thumbURL }}"  style="width: 64px; border-radius: var(--border-radius); margin-right: 10px;">
           <div>
             <span class="size-h3 color-primary">{{ .JSON.String "MediaContainer.Metadata.0.grandparentTitle" }} · {{ .JSON.String "MediaContainer.Metadata.0.title" }}</span><br>
             <span class="size-h3 color-highlight">{{ .JSON.String "MediaContainer.Metadata.0.parentTitle" }} · Episode {{ .JSON.String "MediaContainer.Metadata.0.index" }}</span><br>
@@ -30,8 +32,10 @@ show recent activities(TV or Movie) from Plex
         </li>
       {{ else if eq $librarySectionID 2 }}
         {{ $duration := .JSON.Float "MediaContainer.Metadata.0.duration" }}
+        {{ $thumbPath := .JSON.String "MediaContainer.Metadata.0.thumb"}}
+        {{ $thumbURL := concat "${PLEX_SERVER}" $thumbPath "?X-Plex-Token=${PLEX_TOKEN}" }}
         <li style="display: flex; align-items: center;">
-          <img loading="lazy" src="/assets/pic.jpg"  style="width: 64px; border-radius: var(--border-radius); margin-right: 10px;">
+          <img loading="lazy" src="{{ $thumbURL }}"  style="width: 64px; border-radius: var(--border-radius); margin-right: 10px;">
           <div>
             <span class="size-h3 color-primary">{{ .JSON.String "MediaContainer.Metadata.0.title" }}</span><br>
             <span class="size-h3 color-highlight">{{ .JSON.String "MediaContainer.Metadata.0.Country.0.tag" }} · {{ .JSON.String "MediaContainer.Metadata.0.Director.0.tag" }} · {{ .JSON.String "MediaContainer.Metadata.0.Genre.0.tag" }}</span><br>

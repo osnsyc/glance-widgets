@@ -12,11 +12,11 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 - [Healthchecks stats](widgets/healthchecks-stats/README.md) - show stats from Healthchecks 
 - [Twikoo Comments](widgets/recent-twikoo-comments/README.md) - show latest comments from Twikoo 
 - [Steam Specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam
+- [Recent Plex](widgets/recent-plex/README.md) - show recent activities(TV or Movie) from Plex
 
 `extension`
 - [Recent-MoonReader](widgets/recent-moonreader/README.md) - show recent activities from android app MoonReader by parsing cache files
 - [Flood Stats](widgets/flood-stats/README.md) - show stats from Flood torrent client
-- [Recent Plex](widgets/recent-plex/README.md) - show recent activities(TV or Movie) from Plex
 - [Sspai Stats](widgets/sspai-stats/README.md) - show stats of author from site sspai.com
 
 ### Customize API 
