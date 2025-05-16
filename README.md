@@ -18,6 +18,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 - [Recent-MoonReader](widgets/recent-moonreader/README.md) - show recent activities from android app MoonReader by parsing cache files
 - [Flood Stats](widgets/flood-stats/README.md) - show stats from Flood torrent client
 - [Sspai Stats](widgets/sspai-stats/README.md) - show stats of author from site sspai.com
+- [Immich Photo](widgets/immich-photo/README.md) - show photo from immich
 
 ### Customize API 
 
