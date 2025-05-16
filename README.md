@@ -13,6 +13,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 - [Twikoo Comments](widgets/recent-twikoo-comments/README.md) - show latest comments from Twikoo 
 - [Steam Specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam
 - [Recent Plex](widgets/recent-plex/README.md) - show recent activities(TV or Movie) from Plex
+- [Cloudflare Stats](widgets/cloudflare-stats/README.md) - show cloudflare Stats
 
 `extension`
 - [Recent-MoonReader](widgets/recent-moonreader/README.md) - show recent activities from android app MoonReader by parsing cache files
