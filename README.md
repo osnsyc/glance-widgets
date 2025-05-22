@@ -14,6 +14,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 - [Steam Specials](widgets/steam-specials/README.md) - show a list of discounted games on Steam
 - [Recent Plex](widgets/recent-plex/README.md) - show recent activities(TV or Movie) from Plex
 - [Cloudflare Stats](widgets/cloudflare-stats/README.md) - show cloudflare Stats
+- [Tiny Tiny RSS Stats](widgets/ttrss-stats/README.md) - show stats from Tiny Tiny RSS, 5 lables and health check
 
 `extension`
 - [Recent-MoonReader](widgets/recent-moonreader/README.md) - show recent activities from android app MoonReader by parsing cache files
