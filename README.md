@@ -15,6 +15,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 - [Recent Plex](widgets/recent-plex/README.md) - show recent activities(TV or Movie) from Plex
 - [Cloudflare Stats](widgets/cloudflare-stats/README.md) - show cloudflare Stats
 - [Tiny Tiny RSS Stats](widgets/ttrss-stats/README.md) - show stats from Tiny Tiny RSS, 5 lables and health check
+- [N8N Error Report](widgets/n8n-error-report/README.md) - show error executions in n8n
 
 `extension`
 - [Recent-MoonReader](widgets/recent-moonreader/README.md) - show recent activities from android app MoonReader by parsing cache files
