@@ -22,6 +22,7 @@ Custom API widgets are much easier to setup and usually only require a copy-past
 - [Flood Stats](widgets/flood-stats/README.md) - show stats from Flood torrent client
 - [Sspai Stats](widgets/sspai-stats/README.md) - show stats of author from site sspai.com
 - [Immich Photo](widgets/immich-photo/README.md) - show photo from immich
+- [China Gasoline Prices](widgets/China-gasoline-prices/README.md) - show gasoline prices in China (for Chinese users only)
 
 ### Customize API 
 
