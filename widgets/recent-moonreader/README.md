@@ -38,5 +38,33 @@ show recent activities from android app MoonReader by parsing cache files
 ```
 ## Environment variables
 
-- `${MOONREADER_STATS_ENDPOINT}` - #TODO.
+- `${MOONREADER_STATS_ENDPOINT}` - `http://LOCALHOST:GLANCE_PORT/assets/moonreader.json`.
+
+## Prepare data
+
+```bash
+git clone https://github.com/osnsyc/MoonReader_tools.git
+```
+
+Copy `get_activities.py` to `/MoonReader_tools`
+
+```bash
+python get_activities.py
+```
+
+Paths `MOONREADER_CACHE`, `CALIBRE_DB`, `CALIBRE_LIB` and `GLANCE_ASSETS` in `get_activities.py` are hardcoded — adjust them.
+
+This will create or update the file: `/path/to/glance/assets/moonreader.json`
+
+To also retrieve the book's author and copy its cover image (`cover.jpg`) from the Calibre library:
+
+```bash
+python get_activities.py --cover
+```
+
+This will:
+
+-  Look up the book by title in the Calibre SQLite database (`metadata.db`)
+-  Copy the corresponding `cover.jpg` to: `/path/to/glance/assets/mr.jpg`
+-  Add the author's name to the JSON file
 
