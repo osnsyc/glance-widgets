@@ -24,7 +24,7 @@ show latest comments from Twikoo
           {{ $comment := $v.String "comment" }}
           {{ $updated := $v.Int "updated" }}
           {{ $seconds := div $updated 1000 }}
-          <div>
+          <div style="width: 90%; margin: auto; word-break: break-word; overflow-wrap: break-word; white-space: normal;">
             <span class="size-base color-positive">{{ $nick }}</span>
             <span class="size-base color-highlight">：{{findSubmatch "<p>(.*?)</p>" $comment}}</span>
           </div>
